@@ -61,3 +61,27 @@ npm run test
 ```
 
 でテストを実行する
+
+# テスト用メソッド
+
+## describe
+
+テストをカテゴライズする
+
+```javascript
+describe('validateStringNotEmpty()', () => {
+  test('文字列であるときの正常系テスト', () => {
+    const input = 'string value';
+    const validationFunction = () => validateStringNotEmpty(input);
+    expect(validationFunction).not.toThrowError();
+  });
+
+  test('文字列が空の異常系テスト', () => {
+    const input = '';
+    const validationFunction = () => validateStringNotEmpty(input);
+    expect(validationFunction).toThrowError(
+      'Invalid input - must not be empty.'
+    );
+  });
+});
+```
