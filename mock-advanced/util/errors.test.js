@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { HttpError } from './errors';
+import { HttpError, ValidationError } from './errors';
 
 describe('class HttpError', () => {
   test('statusCode,message,dataを保持する必要がある', () => {
@@ -20,5 +20,14 @@ describe('class HttpError', () => {
     expect(testError.statusCode).toBe(testStatus);
     expect(testError.message).toBe(testMessage);
     expect(testError.data).toBeUndefined();
+  });
+});
+
+describe('class ValidationError', () => {
+  test('messageを保持する必要がある', () => {
+    const testMessage = '正常実行';
+
+    const testError = new ValidationError(testMessage);
+    expect(testError.message).toBe(testMessage);
   });
 });
