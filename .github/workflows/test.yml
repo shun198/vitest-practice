@@ -1,7 +1,5 @@
-# アクション名
 name: Vitest
 
-# タイミングを指定
 on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
@@ -33,8 +31,6 @@ jobs:
         run: npm ci
       - name: "Test"
         run: npx vitest --coverage.enabled true
-      - name: ls -la
-        run: ls -la
       # https://github.com/davelosert/vitest-coverage-report-action
       - name: Show coverage
         uses: davelosert/vitest-coverage-report-action@v2
