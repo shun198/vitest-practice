@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: "Test"
-        run: npm run test
+        run: npx vitest --coverage.enabled true
       - name: ls -la
         run: ls -la
       - name: Show coverage
