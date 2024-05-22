@@ -35,6 +35,7 @@ jobs:
         run: npx vitest --coverage.enabled true
       - name: ls -la
         run: ls -la
+      # https://github.com/davelosert/vitest-coverage-report-action
       - name: Show coverage
         uses: davelosert/vitest-coverage-report-action@v2
         with:

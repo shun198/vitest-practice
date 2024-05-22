@@ -15,10 +15,11 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
+    "c8": "^9.1.0",
     "http-server": "^14.1.0",
     "install": "^0.13.0",
     "npm": "^8.6.0",
-    "vitest": "^0.9.0",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vitest": "^0.9.0"
   }
 }
