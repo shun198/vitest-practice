@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/basic-testing-frontend"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/mock-advanced"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/testing-mock"
+    schedule:
+      interval: "weekly"
