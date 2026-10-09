@@ -14,7 +14,7 @@
     "http-server": "^14.1.0"
   },
   "devDependencies": {
-    "happy-dom": "^2.55.0",
+    "happy-dom": "^20.14.5",
     "vitest": "^0.9.3"
   }
 }
