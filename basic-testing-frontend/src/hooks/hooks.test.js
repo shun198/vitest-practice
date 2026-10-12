@@ -24,7 +24,7 @@ afterAll(() => {});
 // 全てのテストを実行した後に1度だけ実行
 afterEach(() => {});
 
-describe.concurrent('メールの更新', () => {
+describe('メールの更新', () => {
   it('should update the email', () => {
     const newTestEmail = 'test2@test.com';
     user.updateEmail(newTestEmail);

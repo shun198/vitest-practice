@@ -8,7 +8,7 @@ test('JWTトークンを生成', () => {
   });
 });
 
-test('JWTトークンを生成', () => {
+test('JWTトークンを生成', async () => {
   const testEmail = 'test@test.com';
-  expect(generateTokenPromise(testEmail)).resolves.toBeDefined();
+  await expect(generateTokenPromise(testEmail)).resolves.toBeDefined();
 });
