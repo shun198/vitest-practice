@@ -12,7 +12,7 @@
   "author": "shun198",
   "license": "ISC",
   "dependencies": {
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "c8": "^9.1.0",
